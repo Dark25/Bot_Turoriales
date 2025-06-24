@@ -1,0 +1,29 @@
+{
+	"name": "bot_tutoriales",
+	"private": true,
+	"version": "1.0.0",
+	"main": "index.js",
+	"dependencies": {
+		"@iamtraction/google-translate": "^2.0.1",
+		"colors": "^1.4.0",
+		"discord-html-transcripts": "^3.2.0",
+		"discord.js": "^14.14.1",
+		"dotenv": "^16.4.1",
+		"mongoose": "^8.2.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"scripts": {
+		"check": "biome check --write .",
+		"start": "node .",
+		"deploy": "node deploy-commands.js",
+		"deploy:global": "node deploy-commands.js global",
+		"deploy:guild": "node deploy-commands.js guild",
+		"deploy:clear": "node deploy-commands.js clear",
+		"deploy:list": "node deploy-commands.js list"
+	}
+}
