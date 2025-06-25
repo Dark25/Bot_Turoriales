@@ -8,7 +8,7 @@ class WelcomePlugin extends BasePlugin {
 		this.name = "welcome";
 		this.version = "1.0.0";
 		this.description = "Sistema de bienvenida para nuevos miembros";
-		this.author = "ALDA#8939";
+		this.author = "Dark25";
 
 		// Configuración del plugin
 		this.configSchema = {
@@ -34,8 +34,6 @@ class WelcomePlugin extends BasePlugin {
 	 * Se ejecuta cuando el plugin es cargado
 	 */
 	async onLoad() {
-		this.log("Plugin de bienvenida cargado", "success");
-
 		// Registrar evento de miembro nuevo
 		this.registerEvent({
 			name: "guildMemberAdd",
@@ -46,9 +44,7 @@ class WelcomePlugin extends BasePlugin {
 	/**
 	 * Se ejecuta cuando el plugin es descargado
 	 */
-	async onUnload() {
-		this.log("Plugin de bienvenida descargado", "warn");
-	}
+	async onUnload() {}
 
 	/**
 	 * Maneja cuando un nuevo miembro se une
