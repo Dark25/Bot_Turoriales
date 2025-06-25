@@ -126,7 +126,7 @@ class PluginManager {
 		this.plugins.set(plugin.name, plugin);
 		this.client.plugins.set(plugin.name, plugin);
 
-		console.log(`» | Plugin '${plugin.name}' v${plugin.version} cargado`.green);
+		console.log(`✅ Plugin '${plugin.name}' v${plugin.version} cargado`.green);
 		return plugin;
 	}
 
@@ -229,6 +229,10 @@ class PluginManager {
 			} else {
 				this.client.on(event.name, listener);
 			}
+			//evemto con emoiji
+			console.log(
+				`» | Evento de plugin cargado: ${event.name} (${plugin.name})`.green,
+			);
 		}
 	}
 
