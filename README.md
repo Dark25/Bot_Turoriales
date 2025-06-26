@@ -1,21 +1,51 @@
-# Bot_Tutorial
+# 🤖 Bot_Tutoriales
 
-Proyecto de un bot en construcción, que se anda realizando en mi [canal](https://www.youtube.com/@elalda/), el cual puedes seguir paso a paso, para poder construir tu propio bot de Discord
+¡Bienvenido al proyecto de bot de Discord en desarrollo! Puedes seguir el paso a paso en mi [canal de YouTube](https://www.youtube.com/@elalda/) para aprender a crear tu propio bot desde cero.
 
-#**Puedes instalar estos packages en la terminal de tu editor de código escribiendo:**
+---
 
-- Uso: `npm install <package>`
-- Nota: Escribelo sin los <>
-- Ejemplo `npm install discord.js`
+## 🚀 Instalación Rápida
 
-#**Packages Usados**
+Instala los paquetes necesarios ejecutando en la terminal:
 
-- discord.js
-- dotenv
-- @iamtraction/google-translate
-- mongoose
-- discord-html-transcripts
+```bash
+npm install <package>
+```
+> Reemplaza `<package>` por el nombre del paquete. Ejemplo:
+>
+> ```bash
+> npm install discord.js
+> ```
 
-[Para ayuda o soporte, dale a este link](https://discord.gg/JpKGJFZCzK)
+---
 
-[Donaciones Paypal](https://www.paypal.com/paypalme/elaldas)
+## 📦 Packages Usados
+
+- `discord.js` — Interfaz principal con la API de Discord
+- `dotenv` — Variables de entorno
+- `@iamtraction/google-translate` — Traducción automática
+- `mongoose` — Base de datos MongoDB
+- `discord-html-transcripts` — Transcripciones de chats
+
+---
+
+## 🛠️ Funcionalidades Destacadas
+
+- Sistema de invitaciones con estadísticas y ranking
+- Sistema de sugerencias con votación y moderación
+- Comandos personalizados y utilidades
+- Moderación básica y avanzada
+- Integración con MongoDB
+
+---
+
+## 📋 Ejemplo de Comandos
+
+```bash
+/plugin-enable name:Invitations
+/invite-setup canal:#bienvenidas anti-fake:true
+/suggest categoria:general
+/suggestion-list estado:pending
+```
+
+¡Gracias por tu interés y apoyo! Si tienes dudas, únete al Discord o revisa los videos del canal para más tutoriales y ejemplos.
